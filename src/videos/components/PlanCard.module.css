@@ -1,0 +1,62 @@
+.card {
+  display: block;
+  background-color: var(--color-gainsboro);
+}
+
+.title {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.renewal {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.current-storage,
+.current-bandwidth {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.consumption-name {
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.consumption-value {
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.consumption-bar {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.consumption-bar progress {
+  appearance: none;
+  width: 100%;
+  height: 0.5rem;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: var(--color-primary);
+  border-radius: 100px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.manage-plan .btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  cursor: pointer;
+}
