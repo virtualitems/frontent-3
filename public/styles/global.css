@@ -1,0 +1,167 @@
+:root {
+  --color-primary: #4900FE;
+  --color-secondary: #6c757d;
+  --color-success: #198754;
+  --color-danger: #dc3545;
+  --color-warning: #ffc107;
+  --color-info: #0dcafa;
+  --color-light: #f8f9fa;
+  --color-dark: #212529;
+  --color-gainsboro: #eee;
+  --document-font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100%;
+}
+
+body {
+  font-size: 1rem;
+  font-family: var(--document-font-family);
+  background-color: var(--color-gainsboro);
+}
+
+/* LAYOUT 12 COLS */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  position: relative;
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {
+  flex: 0 0 auto;
+  width: 8.33%;
+}
+
+.col-2 {
+  flex: 0 0 auto;
+  width: 16.66%;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33%;
+}
+
+.col-5 {
+  flex: 0 0 auto;
+  width: 41.66%;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 auto;
+  width: 58.33%;
+}
+
+.col-8 {
+  flex: 0 0 auto;
+  width: 66.66%;
+}
+
+.col-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 auto;
+  width: 83.33%;
+}
+
+.col-11 {
+  flex: 0 0 auto;
+  width: 91.66%;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+/* SHARED STYLES */
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-3 {
+  margin: 1rem;
+}
+
+.m-4 {
+  margin: 1.5rem;
+}
+
+.m-5 {
+  margin: 3rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
+.p-4 {
+  padding: 1.5rem;
+}
+
+.p-5 {
+  padding: 3rem;
+}
+
+.rounded {
+  border-radius: 10px;
+}
