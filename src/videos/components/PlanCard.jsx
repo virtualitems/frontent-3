@@ -9,7 +9,7 @@ import css from './PlanCard.module.css';
  */
 function PlanCard(props) {
   return (
-    <section className={`${css.card} rounded`}>
+    <div className={`${css.card} rounded`}>
       <div className="row">
         <div className="col-12">
           <h1 className={css.title}>
@@ -41,7 +41,7 @@ function PlanCard(props) {
           <button className={css.btnPrimary}>Administrar Plan</button>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

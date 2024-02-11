@@ -1,4 +1,5 @@
 .card {
+  user-select: none;
   display: block;
   background-color: var(--color-background);
 }
@@ -53,6 +54,7 @@ progress[value]::-webkit-progress-bar {
 }
 
 .manage-plan .btn-primary {
+  user-select: none;
   background-color: var(--color-primary);
   color: white;
   border: none;
