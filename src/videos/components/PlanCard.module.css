@@ -1,6 +1,6 @@
 .card {
   display: block;
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-background);
 }
 
 .title {
