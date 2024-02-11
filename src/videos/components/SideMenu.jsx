@@ -50,9 +50,9 @@ function SideMenu(props) {
 
   return (
     <div className={`rounded ${css.sideMenu}`}>
-      <div className={`row ${css.itemsList}`}>
+      <div className="row">
 
-        <div className={`col-12 ${css.headerContainer}`}>
+        <div className="col-12">
           <div className={css.header}>
             <img src="/images/menu-hero.png" alt="menu hero" width="100%" />
           </div>

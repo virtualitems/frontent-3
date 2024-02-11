@@ -4,18 +4,12 @@
   width: 100%;
 }
 
-.header-container {
-
-}
-
 .header {
   display: block;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
-
-.items-list {}
 
 .item-container {
   padding: 10px;
