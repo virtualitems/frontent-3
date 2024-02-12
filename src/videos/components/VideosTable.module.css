@@ -1,0 +1,41 @@
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  user-select: none;
+}
+
+.thead {
+  margin-bottom: 10rem;
+}
+
+.th-cell {
+  text-align: left;
+}
+
+.tbody {
+  border-top: 100px solid transparent;
+}
+
+.tr-header,
+.tr-item {
+  height: 3rem;
+}
+
+.tr-item {
+  cursor: pointer;
+}
+
+.tr-item:hover {
+  background-color: var(--color-background);
+}
+
+.icon-item {
+  display: inline-block;
+  margin-right: 1rem;
+  color: var(--color-primary);
+}
+
+.select-box {
+  padding-left: 1rem;
+}
