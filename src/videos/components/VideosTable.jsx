@@ -2,7 +2,7 @@ import React from 'react';
 import css from './VideosTable.module.css';
 
 /**
- * @description 
+ * @description Videos table component
  * @param {Object} props
  * @returns {JSX.Element}
  */
@@ -114,7 +114,7 @@ function VideosTable(props) {
             <col width="15%" />
             <col width="21%" />
           </colgroup>
-          <thead className={css.thead}>
+          <thead>
             <tr className={css.trHeader}>
               <th className={css.thCell}>
                 <div className={css.selectBox}>
