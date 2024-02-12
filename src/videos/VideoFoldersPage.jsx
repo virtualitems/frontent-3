@@ -1,6 +1,7 @@
 import React from 'react';
 import SideMenu from './components/SideMenu';
 import VideosManager from './components/VideosManager';
+import css from './VideoFoldersPage.module.css';
 
 
 /**
@@ -8,7 +9,7 @@ import VideosManager from './components/VideosManager';
  * @param {Object} props
  * @returns {JSX.Element}
  */
-function VideosPage(props) {
+function VideoFoldersPage(props) {
   return (
     <div className="row p-3">
       <div className="col-3">
@@ -22,4 +23,4 @@ function VideosPage(props) {
 }
 
 
-export default VideosPage;
+export default VideoFoldersPage;
