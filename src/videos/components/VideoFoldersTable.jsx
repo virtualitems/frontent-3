@@ -1,5 +1,7 @@
 import React from 'react';
 import css from './VideoFoldersTable.module.css';
+import { useNavigate } from 'react-router-dom';
+
 
 /**
  * @description Videos table component
@@ -9,6 +11,8 @@ import css from './VideoFoldersTable.module.css';
 function VideoFoldersTable(props) {
 
   const items = props.items;
+
+  const navigate = useNavigate();
 
   return (
     <div className="row">
@@ -39,7 +43,7 @@ function VideoFoldersTable(props) {
             {
               items.map((item, index) => {
                 return (
-                  <tr key={index} className={css.trItem}>
+                  <tr key={index} className={css.trItem} onClick={() => { navigate('/videos') }}>
                     <td>
                       <div className={css.selectBox}>
                         <input type="checkbox" />

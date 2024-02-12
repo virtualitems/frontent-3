@@ -1,6 +1,8 @@
 import React from 'react';
 import css from './VideosManager.module.css';
 import VideosTable from './VideosTable';
+import { useNavigate } from 'react-router-dom';
+
 
 /**
  * @description Videos manager
@@ -8,6 +10,8 @@ import VideosTable from './VideosTable';
  * @returns {JSX.Element}
  */
 function VideosManager(props) {
+
+  const navigate = useNavigate();
 
   const tableItems = [
     {
@@ -78,7 +82,7 @@ function VideosManager(props) {
         <div className="col-12 mb-5">
 
           <div className="d-inline-block mr-3">
-            <button className={css.buttonBack}>
+            <button className={css.buttonBack} onClick={() => { navigate('/') }}>
               <i className="fas fa-arrow-left"></i>
             </button>
           </div>
