@@ -1,5 +1,5 @@
 import React from 'react';
-import css from './VideosManager.module.css';
+import css from './VideoFoldersManager.module.css';
 import VideoFoldersTable from './VideoFoldersTable';
 
 /**
@@ -7,9 +7,9 @@ import VideoFoldersTable from './VideoFoldersTable';
  * @param {Object} props
  * @returns {JSX.Element}
  */
-function VideosManager(props) {
+function VideoFoldersManager(props) {
   return (
-    <section className={css.videosManager}>
+    <section className={css.videoFoldersManager}>
       <div className="row">
         <div className="col-12 mb-1">
           <div className={css.buttonsRow}>
@@ -62,4 +62,4 @@ function VideosManager(props) {
 }
 
 
-export default VideosManager;
+export default VideoFoldersManager;

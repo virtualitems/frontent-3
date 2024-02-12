@@ -1,6 +1,6 @@
 import React from 'react';
 import SideMenu from './components/SideMenu';
-import VideosManager from './components/VideosManager';
+import VideoFoldersManager from './components/VideoFoldersManager';
 import css from './VideoFoldersPage.module.css';
 
 
@@ -16,7 +16,7 @@ function VideoFoldersPage(props) {
         <SideMenu />
       </div>
       <div className="col-9">
-        <VideosManager />
+        <VideoFoldersManager />
       </div>
     </div>
   )
