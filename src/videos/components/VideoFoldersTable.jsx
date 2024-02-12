@@ -1,12 +1,12 @@
 import React from 'react';
-import css from './VideosTable.module.css';
+import css from './VideoFoldersTable.module.css';
 
 /**
  * @description Videos table component
  * @param {Object} props
  * @returns {JSX.Element}
  */
-function VideosTable(props) {
+function VideoFoldersTable(props) {
 
   const propsitems = [
     {
@@ -159,4 +159,4 @@ function VideosTable(props) {
 }
 
 
-export default VideosTable;
+export default VideoFoldersTable;

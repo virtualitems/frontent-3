@@ -1,6 +1,6 @@
 import React from 'react';
 import css from './VideosManager.module.css';
-import VideosTable from './VideosTable';
+import VideoFoldersTable from './VideoFoldersTable';
 
 /**
  * @description Videos manager
@@ -54,7 +54,7 @@ function VideosManager(props) {
           </div>
         </div>
         <div className="col-12 mb-1">
-          <VideosTable />
+          <VideoFoldersTable />
         </div>
       </div>
     </section>
