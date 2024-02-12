@@ -47,7 +47,7 @@ function VideosTable(props) {
                     </td>
                     <td>
                       <div className={css.iconItem}>
-                        <i className="fa-regular fa-folder"></i>
+                        <i className="fa-regular fa-circle-play"></i>
                       </div>
                       {item.name}
                     </td>
