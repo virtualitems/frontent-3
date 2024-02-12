@@ -8,6 +8,100 @@ import VideoFoldersTable from './VideoFoldersTable';
  * @returns {JSX.Element}
  */
 function VideoFoldersManager(props) {
+
+  const tableItems = [
+    {
+      name: 'Afiliado Master',
+      videos: 8,
+      size: '7.3 GB',
+      lastModification: '30/may/2023'
+    },
+    {
+      name: 'BeMaster',
+      videos: 21,
+      size: '1.4 GB',
+      lastModification: '22/jun/2022'
+    },
+    {
+      name: 'Comizzión',
+      videos: 10,
+      size: '284 MB',
+      lastModification: '11/sep/2021'
+    },
+    {
+      name: 'Creador de Contenido',
+      videos: 2,
+      size: '4.3 GB',
+      lastModification: '21/jun/2023'
+    },
+    {
+      name: 'Exportados Wil',
+      videos: 14,
+      size: '500 MB',
+      lastModification: '5/abr/2023'
+    },
+    {
+      name: 'Afiliado Master',
+      videos: 8,
+      size: '7.3 GB',
+      lastModification: '30/may/2023'
+    },
+    {
+      name: 'BeMaster',
+      videos: 21,
+      size: '1.4 GB',
+      lastModification: '22/jun/2022'
+    },
+    {
+      name: 'Comizzión',
+      videos: 10,
+      size: '284 MB',
+      lastModification: '11/sep/2021'
+    },
+    {
+      name: 'Creador de Contenido',
+      videos: 2,
+      size: '4.3 GB',
+      lastModification: '21/jun/2023'
+    },
+    {
+      name: 'Exportados Wil',
+      videos: 14,
+      size: '500 MB',
+      lastModification: '5/abr/2023'
+    },
+    {
+      name: 'Afiliado Master',
+      videos: 8,
+      size: '7.3 GB',
+      lastModification: '30/may/2023'
+    },
+    {
+      name: 'BeMaster',
+      videos: 21,
+      size: '1.4 GB',
+      lastModification: '22/jun/2022'
+    },
+    {
+      name: 'Comizzión',
+      videos: 10,
+      size: '284 MB',
+      lastModification: '11/sep/2021'
+    },
+    {
+      name: 'Creador de Contenido',
+      videos: 2,
+      size: '4.3 GB',
+      lastModification: '21/jun/2023'
+    },
+    {
+      name: 'Exportados Wil',
+      videos: 14,
+      size: '500 MB',
+      lastModification: '5/abr/2023'
+    },
+  ];
+
   return (
     <section className={css.videoFoldersManager}>
       <div className="row">
@@ -54,7 +148,7 @@ function VideoFoldersManager(props) {
           </div>
         </div>
         <div className="col-12 mb-1">
-          <VideoFoldersTable />
+          <VideoFoldersTable items={tableItems} />
         </div>
       </div>
     </section>

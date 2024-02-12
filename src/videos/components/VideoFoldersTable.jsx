@@ -8,99 +8,7 @@ import css from './VideoFoldersTable.module.css';
  */
 function VideoFoldersTable(props) {
 
-  const propsitems = [
-    {
-      name: 'Afiliado Master',
-      videos: 8,
-      size: '7.3 GB',
-      lastModification: '30/may/2023'
-    },
-    {
-      name: 'BeMaster',
-      videos: 21,
-      size: '1.4 GB',
-      lastModification: '22/jun/2022'
-    },
-    {
-      name: 'Comizzión',
-      videos: 10,
-      size: '284 MB',
-      lastModification: '11/sep/2021'
-    },
-    {
-      name: 'Creador de Contenido',
-      videos: 2,
-      size: '4.3 GB',
-      lastModification: '21/jun/2023'
-    },
-    {
-      name: 'Exportados Wil',
-      videos: 14,
-      size: '500 MB',
-      lastModification: '5/abr/2023'
-    },
-    {
-      name: 'Afiliado Master',
-      videos: 8,
-      size: '7.3 GB',
-      lastModification: '30/may/2023'
-    },
-    {
-      name: 'BeMaster',
-      videos: 21,
-      size: '1.4 GB',
-      lastModification: '22/jun/2022'
-    },
-    {
-      name: 'Comizzión',
-      videos: 10,
-      size: '284 MB',
-      lastModification: '11/sep/2021'
-    },
-    {
-      name: 'Creador de Contenido',
-      videos: 2,
-      size: '4.3 GB',
-      lastModification: '21/jun/2023'
-    },
-    {
-      name: 'Exportados Wil',
-      videos: 14,
-      size: '500 MB',
-      lastModification: '5/abr/2023'
-    },
-    {
-      name: 'Afiliado Master',
-      videos: 8,
-      size: '7.3 GB',
-      lastModification: '30/may/2023'
-    },
-    {
-      name: 'BeMaster',
-      videos: 21,
-      size: '1.4 GB',
-      lastModification: '22/jun/2022'
-    },
-    {
-      name: 'Comizzión',
-      videos: 10,
-      size: '284 MB',
-      lastModification: '11/sep/2021'
-    },
-    {
-      name: 'Creador de Contenido',
-      videos: 2,
-      size: '4.3 GB',
-      lastModification: '21/jun/2023'
-    },
-    {
-      name: 'Exportados Wil',
-      videos: 14,
-      size: '500 MB',
-      lastModification: '5/abr/2023'
-    },
-  ];
-
+  const items = props.items;
 
   return (
     <div className="row">
@@ -129,7 +37,7 @@ function VideoFoldersTable(props) {
           </thead>
           <tbody className={css.tbody}>
             {
-              propsitems.map((item, index) => {
+              items.map((item, index) => {
                 return (
                   <tr key={index} className={css.trItem}>
                     <td>

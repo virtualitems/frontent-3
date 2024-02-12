@@ -10,43 +10,7 @@ import PlanCard from './PlanCard';
  */
 function SideMenu(props) {
 
-  const propsitems = [
-    {
-      text: 'Dashboard',
-      icon: 'fa-solid fa-bars-progress',
-      active: false,
-    },
-    {
-      text: 'Videos',
-      icon: 'fa-regular fa-folder',
-      active: true,
-    },
-    {
-      text: 'Player',
-      icon: 'fa-regular fa-circle-play',
-      active: false,
-    },
-    {
-      text: 'Analytics',
-      icon: 'fa-solid fa-chart-column',
-      active: false,
-    },
-    {
-      text: 'Configuraciones',
-      icon: 'fa-solid fa-gear',
-      active: false,
-    }
-  ];
-
-  propsitems.push(
-    {
-      text: 'Ayuda',
-      icon: 'fas fa-question-circle',
-      active: false,
-    }
-  );
-
-  const items = propsitems;
+  const items = props.items;
 
   return (
     <div className={`rounded ${css.sideMenu}`}>

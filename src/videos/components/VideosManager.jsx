@@ -8,6 +8,70 @@ import VideosTable from './VideosTable';
  * @returns {JSX.Element}
  */
 function VideosManager(props) {
+
+  const tableItems = [
+    {
+      name: 'Entrenamiento.mp4',
+      size: '7.3 GB',
+      duration: '04:11:37',
+      lastModification: '30/may/2023',
+    },
+    {
+      name: 'Salida-al-mercado-versión nueva.mp4',
+      size: '1.4 GB',
+      duration: '47:55',
+      lastModification: '22/jun/2022',
+    },
+    {
+      name: 'Como-cerrar-una-venta.mp4',
+      size: '284 MB',
+      duration: '10:12',
+      lastModification: '11/sep/2021',
+    },
+    {
+      name: 'Crea-un-ticket-valioso.mp4',
+      size: '4.3 GB',
+      duration: '03:50:22',
+      lastModification: '21/jun/2023',
+    },
+    {
+      name: 'Conquista-el-mercado-digital.mp4',
+      size: '500 MB',
+      duration: '5:00',
+      lastModification: '5/abr/2023',
+    },
+    {
+      name: 'Entrenamiento.mp4',
+      size: '7.3 GB',
+      duration: '04:11:37',
+      lastModification: '30/may/2023',
+    },
+    {
+      name: 'Salida-al-mercado-versión nueva.mp4',
+      size: '1.4 GB',
+      duration: '47:55',
+      lastModification: '22/jun/2022',
+    },
+    {
+      name: 'Como-cerrar-una-venta.mp4',
+      size: '284 MB',
+      duration: '10:12',
+      lastModification: '11/sep/2021',
+    },
+    {
+      name: 'Crea-un-ticket-valioso.mp4',
+      size: '4.3 GB',
+      duration: '03:50:22',
+      lastModification: '21/jun/2023',
+    },
+    {
+      name: 'Conquista-el-mercado-digital.mp4',
+      size: '500 MB',
+      duration: '5:00',
+      lastModification: '5/abr/2023',
+    }
+  ];
+
   return (
     <section className={css.videosManager}>
       <div className="row">
@@ -25,7 +89,7 @@ function VideosManager(props) {
           </div>
         </div>
         <div className="col-12 mb-1">
-          <VideosTable />
+          <VideosTable items={tableItems} />
         </div>
       </div>
     </section>
