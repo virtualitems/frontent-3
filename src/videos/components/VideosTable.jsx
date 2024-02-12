@@ -109,9 +109,9 @@ function VideosTable(props) {
         <table width="100%" className={css.table}>
           <colgroup>
             <col width="5%" />
-            <col width="45%" />
-            <col width="15%" />
-            <col width="15%" />
+            <col width="48%" />
+            <col width="12%" />
+            <col width="12%" />
             <col width="21%" />
           </colgroup>
           <thead>
