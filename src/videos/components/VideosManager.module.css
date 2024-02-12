@@ -1,0 +1,55 @@
+.videos-manager {
+  min-height: 100%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.buttons-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-buttons {
+  display: inline-block;
+}
+
+.right-buttons {
+  display: inline-block;
+}
+
+.left-button-active {
+  color: var(--color-primary);
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.left-button,
+.right-button {
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+}
+
+.button-back {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bread-crumb {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.bread-crumb-active {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
