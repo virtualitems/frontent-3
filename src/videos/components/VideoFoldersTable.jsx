@@ -12,7 +12,7 @@ function VideoFoldersTable(props) {
 
   return (
     <div className="row">
-      <div class="col-12 p-0">
+      <div className="col-12 p-0">
 
         <table width="100%" className={css.table}>
           <colgroup>
