@@ -52,4 +52,5 @@
 .bread-crumb-active {
   font-weight: bold;
   font-size: 1.2rem;
+  color: var(--color-dark)
 }

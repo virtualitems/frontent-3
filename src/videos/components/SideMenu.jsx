@@ -27,7 +27,7 @@ function SideMenu(props) {
             return (
               <div key={index} className={`col-12 ${css.itemContainer}`}>
                 <div className={`${css.item} ${item.active ? css.itemActive : ''}`}>
-                  <div className={css.itemIcon}>
+                  <div className={`${css.itemIcon} ${item.active ? css.itemIconActive : ''}`}>
                     <i className={item.icon}></i>
                   </div>
                   <div className={css.itemText}>
